@@ -2,16 +2,19 @@
   <div id="app">
     <img src="./assets/logo.png">
     <HelloWorld/>
+    <Counter/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import Counter from './components/Counter'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Counter
   }
 }
 </script>

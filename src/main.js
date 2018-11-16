@@ -20,10 +20,15 @@ const store = new Vuex.Store({
     decrement (state, payload = 1) {
       state.count -= payload
     }
+  },
+  getters: {
+    count (state, getters) {
+      return state.count
+    }
   }
 })
 
-store.commit('increment')
+//store.commit('increment')
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
